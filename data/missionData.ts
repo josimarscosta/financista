@@ -11,11 +11,13 @@ export const MISSIONS_DATA: MissionData[] = [
 
 1.  **Rentabilidade (ROE):** Ambev (13.6%) e Localiza (13.3%) são as mais rentáveis para o acionista, superando de longe a Magazine Luiza (3.3%), que sofre com margens apertadas no varejo.
 
-2.  **Endividamento:** Localiza (70%) e Magazine Luiza (66.7%) operam com alta alavancagem, o que potencializa os retornos, mas também aumenta o risco, especialmente em cenários de juros altos. A Ambev (38.9%) possui uma estrutura de capital muito mais conservadora e segura.
+2.  **Endividamento Geral:** Localiza (70%) e Magazine Luiza (66.7%) operam com alta alavancagem, o que potencializa os retornos, mas também aumenta o risco. A Ambev (38.9%) possui uma estrutura de capital muito mais conservadora.
 
-3.  **Liquidez (Corrente):** Todas apresentam liquidez corrente acima de 1, indicando capacidade de cobrir obrigações de curto prazo. Magazine Luiza (1.27) e Ambev (1.25) estão em posições confortáveis.
+3.  **Composição do Endividamento:** Este é um diferencial crucial. Magazine Luiza tem uma dívida de altíssimo risco, com 73.3% vencendo no curto prazo. Em contraste, Ambev (45.7%) e, principalmente, Localiza (28.6%) possuem dívidas mais saudáveis e alongadas, alinhadas aos seus investimentos de longo prazo.
 
-**Conclusão:** Ambev é a empresa mais sólida e financeiramente robusta. Localiza oferece alta rentabilidade, mas com risco de endividamento elevado, típico do seu setor. Magazine Luiza enfrenta os maiores desafios de rentabilidade e também opera com alta alavancagem.`
+4.  **Liquidez (Corrente):** Todas apresentam liquidez corrente acima de 1. No entanto, a alta concentração de dívida de curto prazo da Magazine Luiza torna seu indicador de 1.27 mais arriscado do que o 1.25 da Ambev.
+
+**Conclusão:** Ambev é a empresa mais sólida. Localiza oferece alta rentabilidade com uma dívida bem gerenciada para seu setor. Magazine Luiza enfrenta os maiores desafios de rentabilidade e possui um perfil de dívida de maior risco, com alta concentração no curto prazo.`
   },
   {
     id: 2,

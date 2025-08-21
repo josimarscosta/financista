@@ -47,7 +47,7 @@ const FinancialStatement = ({ title, data }: { title: string, data: { [key: stri
 
 // --- MISSION 1: Laboratório de Diagnóstico Comparativo ---
 const Mission1_DiagnosticLab = ({ onSubmit }: { onSubmit: (missionId: number, answer: string) => void }) => {
-    const [selectedIndicators, setSelectedIndicators] = useState<Set<string>>(new Set(['liquidezCorrente', 'endividamentoGeral', 'roe']));
+    const [selectedIndicators, setSelectedIndicators] = useState<Set<string>>(new Set(['liquidezCorrente', 'endividamentoGeral', 'composicaoEndividamento', 'roe']));
     const [studentAnalysis, setStudentAnalysis] = useState('');
 
     const toggleIndicator = (key: string) => {

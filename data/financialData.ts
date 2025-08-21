@@ -114,6 +114,14 @@ export const INDICATORS: Indicator[] = [
     unit: '%',
     calculate: (d) => d.ativoTotal > 0 ? (d.passivoTotal / d.ativoTotal) * 100 : 0,
   },
+  {
+    key: 'composicaoEndividamento',
+    name: 'Composição do Endividamento',
+    category: 'Endividamento',
+    formula: '(Passivo Circulante / Passivo Total) * 100',
+    unit: '%',
+    calculate: (d) => d.passivoTotal > 0 ? (d.passivoCirculante / d.passivoTotal) * 100 : 0,
+  },
    {
     key: 'endividamentoPL',
     name: 'Endividamento sobre PL',
