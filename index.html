@@ -53,6 +53,60 @@
       .dark .animate-pulse-glow-border {
         animation: pulse-glow 4s infinite ease-in-out;
       }
+      
+      /* Print-specific styles */
+      @media print {
+        body {
+            font-size: 12pt;
+        }
+        body * {
+            visibility: hidden;
+        }
+        #report-section, #report-section * {
+            visibility: visible;
+        }
+        #report-section {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            padding: 1rem;
+            color: #000 !important;
+        }
+        .no-print {
+            display: none !important;
+        }
+        /* Page styling for print */
+        @page {
+          size: A4;
+          margin: 1.5cm;
+        }
+        h1, h2, h3, h4 {
+            color: #000 !important;
+            page-break-after: avoid;
+        }
+         h1 { font-size: 24pt; }
+         h2 { font-size: 18pt; }
+         h3 { font-size: 14pt; }
+         p { font-size: 12pt; }
+
+        .report-mission-block {
+          page-break-inside: avoid;
+          margin-top: 2rem;
+          border-top: 2px solid #ccc;
+          padding-top: 1rem;
+        }
+         .report-feedback-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 2rem;
+        }
+        .report-answer-box {
+            border: 1px solid #ddd;
+            padding: 1rem;
+        }
+      }
+
     </style>
      <script>
       // IIFE to set theme before React loads to prevent FOUC

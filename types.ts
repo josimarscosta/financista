@@ -5,6 +5,7 @@ export interface MissionData {
   level: 'PROCEDURAL' | 'ANALÍTICO' | 'ESTRATÉGICO' | 'CRIATIVO';
   description: string;
   prerequisite?: number;
+  modelAnswer: string;
 }
 
 export interface CompanyData {
