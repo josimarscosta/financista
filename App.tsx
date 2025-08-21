@@ -90,7 +90,11 @@ const Mission1_DiagnosticLab = ({ onSubmit }: { onSubmit: (missionId: number, an
                             <thead className="bg-slate-100 dark:bg-slate-900/50">
                                 <tr>
                                     <th className="p-4 font-semibold text-slate-600 dark:text-slate-300 rounded-l-lg">Indicador</th>
-                                    {COMPANIES.map(c => <th key={c.name} className="p-4 font-semibold text-center text-slate-600 dark:text-slate-300">{c.name}</th>)}
+                                    {COMPANIES.map(c => (
+                                        <th key={c.name} className="p-4 font-semibold text-center text-slate-600 dark:text-slate-300">
+                                            {c.name}
+                                        </th>
+                                    ))}
                                 </tr>
                             </thead>
                             <tbody>
